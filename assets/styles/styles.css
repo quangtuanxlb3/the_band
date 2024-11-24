@@ -1,0 +1,473 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+    color: #000000;
+}
+
+/* Start: Header */
+
+#header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.header__menu {
+    display: inline-block;
+}
+
+.header__menu-item {
+    display: inline-block;
+}
+
+.header__menu-item--relative {
+    position: relative;
+}
+
+.header__menu-item--relative:hover .header__submenu {
+    display: block;
+}
+
+.header__menu-item--relative:hover > a {
+    background-color: #ccc;
+    color: #000000;
+}
+
+.header__menu-item-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-transform: uppercase;
+}
+
+.header__menu-item-link:hover {
+    background-color: #ccc;
+    color: #000000;
+}
+
+.header__search-btn {
+    cursor: pointer;
+    float: right;
+    padding: 13px 24px;
+    border: none;
+    background-color: transparent;
+}
+
+.header__search-btn:hover {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+.header__search-btn i {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.header__submenu {
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 160px;
+    z-index: 99999;
+    display: none;
+}
+
+.header__submenu-item {
+
+}
+
+.header__submenu-item-link {
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 16px;
+    font-size: 15px;
+    display: block;
+}
+
+.header__submenu-item-link:hover {
+    background-color: #ccc;
+    color: #000000;
+}
+
+.header__menu-item--relative:hover .header__menu-item-link--active {
+    background-color: #ccc;
+    color: #000000;
+}
+
+.header__menu-item--relative:hover .header__submenu {
+    display: block !important;
+}
+.header__login-signup {
+    float: right;
+    padding: 0;
+    margin-top: 4px; 
+}
+
+.header__login-signup-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #0a0101;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header__login-signup-button:hover {
+    background-color: #f44336;
+}
+
+/* End: Header */
+
+/* Start: Home */
+.home__slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: none;
+}
+
+.home__slider img {
+    width: 100%;
+    height: auto;
+}
+
+.home__slider-slogan {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.home__slider-slogan-title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 24px;
+}
+
+.home__slider-slogan-content {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+/* End: Home */
+
+/* Start: Partials */
+.container {
+    width: 800px;
+    padding: 64px 16px;
+    margin: 0 auto;
+}
+/* End: Partials */
+
+/* Start: band */
+.band__container {
+    text-align: center;
+}
+
+.band__container-title {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 10px 0 24px 0;
+}
+
+.band__container-subtitle {
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.band__container-content {
+    text-align: justify;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+.band__members {
+    width: 100%;
+    display: table;
+}
+
+.band__members-item {
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+
+.band__members-item-name {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.band__members-item-img {
+    width: 154px;
+    border-radius: 6px;
+    height: 158px;
+}
+/* End: band */
+
+/* Start: Tour */
+#tour {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+}
+
+.tour__title {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.tour__subtitle {
+    font-size: 15px;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    font-family: Lato, sans-serif;
+    margin-bottom: 32px;
+}
+
+.tour__dates {
+    background-color: #ffffff;
+    color: #666;
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+.tour__dates-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.tour__dates-item p {
+    display: inline-block;
+}
+
+.tour__dates-item-badge {
+    padding: 4px 6px;
+    color: #ffffff;
+}
+
+.tour__dates-item-badge.red {
+    background-color: #f44336;
+}
+
+.tour__dates-item-badge.black {
+    background-color: #000000;
+}
+
+.tour__dates-item-badge.rounded {
+    border-radius: 50%;
+}
+
+.tour__dates-item-badge.right {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 4px 8px;
+}
+
+.tour__tikets {
+    color: #000000;
+    width: 100%;
+    display: table;
+    margin: 0 -8px;
+    box-sizing: inherit;
+}
+
+.tour__tickets-item-container {
+    padding: 0 8px;
+    float: left;
+    box-sizing: inherit !important;
+    display: block;
+    width: calc(100% / 3);
+}
+
+.tour__tikets-item {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+
+.tour__tikets-item img {
+    width: 100%;
+}
+
+.tour__tikets-item-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.tour__tikets-item-time {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.tour__tikets-item-description {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.tour__tikets-item-btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 16px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tour__tikets-item-btn:hover {
+    background-color: #ccc;
+}
+/* End: Tour */
+
+/* Start: Contact */
+.contact__title {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.contact__subtitle {
+    font-size: 15px;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+    margin-bottom: 32px;
+}
+
+.contact__content {
+    display: table;
+    width: 100%;
+}
+
+.contact__content-infor {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.contact__content-infor p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.contact__content-infor p i {
+    margin-right: 8px;
+}
+
+.contact__content-form {
+    width: 50%;
+    display: table;
+}
+
+.contact__content-form form {
+    margin: 0 -8px;
+}
+
+.contact__content-form-group {
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.contact__content-form-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.contact__content-form-btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 16px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    margin-right: 8px;
+}
+
+.contact__content-form-btn:hover {
+    background-color: #ccc;
+    color: #000000;
+}
+/* End: Contact */
+/* start: Footer */
+.footer  {  
+    width: 100%;
+   
+}
+.footer img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.spacer {
+    background-color: #ffff    ; 
+    padding: 40px 0; 
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.social-icons i {
+    margin: 0 8px;
+}
+
+.powered-by {
+    font-size: 14px;
+    color: #666;
+}
+/* End :  Footer */
