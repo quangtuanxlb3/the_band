@@ -7,6 +7,7 @@ let PRODUCTS = JSON.parse(localStorage.getItem(PRODUCTS_LOCALSTORAGE_KEY)) || [
     time: "Fri 27 Nov 2024",
     description: "IMPACT ARENA.",
     quantity: 1000,
+    price: 10,
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ let PRODUCTS = JSON.parse(localStorage.getItem(PRODUCTS_LOCALSTORAGE_KEY)) || [
     time: "Sat 28 Nov 2024",
     description: "MAHALAXMI RACE COURSE.",
     quantity: 1000,
+    price: 8,
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ let PRODUCTS = JSON.parse(localStorage.getItem(PRODUCTS_LOCALSTORAGE_KEY)) || [
     time: "Sun 29 Nov 2024",
     description: "MALL OFF ASIA ARENA.",
     quantity: 1000,
+    price: 12,
   },
 ];
 

@@ -44,7 +44,7 @@ function buyTicket(productId, quantity) {
     quantity = 1;
   }
 
-  if (!BOUGHT_TICKETS.some((ticket) => ticket.productId === product.id)) {
+  if (!BOUGHT_TICKETS.find((ticket) => ticket.productId === product.id)) {
     BOUGHT_TICKETS.push({ ...product, quantity });
   } else {
     BOUGHT_TICKETS = BOUGHT_TICKETS.map((ticket) => {

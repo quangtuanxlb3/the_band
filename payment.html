@@ -1,79 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thông tin thanh toán</title>
-  <link rel="stylesheet" href="payment.css">
-</head>
-<body>
-  <div class="container">
-    <h1 class="title">Thanh toán</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông tin thanh toán</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Thanh toán</h1>
 
-    <!-- Chọn hình thức giao hàng -->
-    <div class="section delivery">
-      <h2 class="section-title">Chọn hình thức giao hàng</h2>
-      <div class="delivery-option">
-        <input type="radio" id="economy" name="delivery" checked>
-        <label for="economy">Giao tiết kiệm</label>
-      </div>
-      <div class="delivery-details">
-        <p>
-          <strong>📦 Gói:</strong> <span id="delivery-date">Giao vào ngày mai?</span>
-          <button id="change-delivery-btn">Thay đổi</button>
-        </p>
-        <div id="delivery-form" style="display: none;">
-          <input type="date" id="new-delivery-date">
-          <button id="save-delivery-date-btn">Lưu</button>
+      <!-- Chọn hình thức giao hàng -->
+      <div class="section delivery">
+        <h2 class="section-title">Chọn hình thức giao hàng</h2>
+        <div class="delivery-option">
+          <input type="radio" id="economy" name="delivery" checked />
+          <label for="economy">Giao tiết kiệm</label>
         </div>
-        <p><strong>GIÁO TIẾT KIỆM</strong></p>
-        <div class="product-details">
-          <img src="https://via.placeholder.com/50" alt="Product">
-          <div>
-            <p>xxxxxxxxxxxxxxxxxxxx</p>
-            <p>SL: x1</p>
+        <div class="delivery-details">
+          <p>
+            <strong>📦 Gói:</strong>
+            <span id="delivery-date">Giao vào ngày mai?</span>
+            <button id="change-delivery-btn">Thay đổi</button>
+          </p>
+          <div id="delivery-form" style="display: none;">
+            <input type="date" id="new-delivery-date" />
+            <button id="save-delivery-date-btn">Lưu</button>
           </div>
+          <p><strong>GIÁO TIẾT KIỆM</strong></p>
+          <div id="product-list"></div>
         </div>
-        <p class="price">
-          <strong>xxxx $ </strong> <span class="original-price"></span>
+      </div>
+
+      <!-- Giao tới -->
+      <div class="section address">
+        <h2 class="section-title">Giao tới</h2>
+        <div id="address-container">
+          <p id="address-text">
+            <strong>Name</strong><br />
+            sdt<br />
+            địa chỉ
+          </p>
+          <button id="change-address-btn">Thay đổi</button>
+        </div>
+        <div id="address-form" style="display: none;">
+          <input type="text" id="new-address" placeholder="Nhập địa chỉ mới" />
+          <button id="save-address-btn">Lưu</button>
+        </div>
+      </div>
+
+      <!-- Đơn hàng -->
+      <div class="section order-summary">
+        <h2 class="section-title">Đơn hàng</h2>
+        <p>1 sản phẩm. <a href="#">Xem thông tin</a></p>
+        <div class="order-pricing">
+          <p>Tổng tiền hàng: <span id="fee-payment">$</span></p>
+          <p>Phí vận chuyển: <span>2$</span></p>
+        </div>
+        <p class="total">
+          <strong>Tổng tiền thanh toán:</strong>
+          <span id="total-payment">xxxxxx$</span>
         </p>
+
+        <button class="order-btn" id="order-btn">Đặt hàng</button>
       </div>
     </div>
 
-    <!-- Giao tới -->
-    <div class="section address">
-      <h2 class="section-title">Giao tới</h2>
-      <div id="address-container">
-        <p id="address-text">
-          <strong>Name</strong><br>
-          sdt<br>
-          địa chỉ
-        </p>
-        <button id="change-address-btn">Thay đổi</button>
-      </div>
-      <div id="address-form" style="display: none;">
-        <input type="text" id="new-address" placeholder="Nhập địa chỉ mới">
-        <button id="save-address-btn">Lưu</button>
-      </div>
-    </div>
-
-    <!-- Đơn hàng -->
-    <div class="section order-summary">
-      <h2 class="section-title">Đơn hàng</h2>
-      <p>1 sản phẩm. <a href="#">Xem thông tin</a></p>
-      <div class="order-pricing">
-        <p>Tổng tiền hàng: <span>xxxxx$</span></p>
-        <p>Phí vận chuyển: <span>xxxxx$</span></p>
-        
-      </div>
-      <p class="total">
-        <strong>Tổng tiền thanh toán:</strong> <span>xxxxxx$</span>
-      </p>
-      
-      <button class="order-btn">Đặt hàng</button>
-    </div>
-  </div>
-
-  <script src="payment.js"></script>
-</body>
+    <script src="payment.js"></script>
+  </body>
 </html>
