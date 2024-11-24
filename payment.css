@@ -1,0 +1,184 @@
+/* Tổng quan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề chính */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Phần chung */
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Giao diện phần giao hàng */
+  .delivery-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .delivery-option input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .delivery-details {
+    background-color: #f1f9ff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #d0e7ff;
+  }
+  
+  .delivery-details p {
+    margin: 5px 0;
+  }
+  
+  .product-details {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .product-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .price {
+    margin-top: 10px;
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  /* Nút thay đổi */
+  #change-delivery-btn,
+  #save-delivery-date-btn,
+  #change-address-btn,
+  #save-address-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  #change-delivery-btn:hover,
+  #save-delivery-date-btn:hover,
+  #change-address-btn:hover,
+  #save-address-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #delivery-form,
+  #address-form {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  #new-delivery-date,
+  #new-address {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Phần giao tới */
+  .address {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+  
+  #address-text {
+    margin-bottom: 10px;
+  }
+  
+  /* Đơn hàng */
+  .order-summary {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+  .order-summary p {
+    margin: 5px 0;
+  }
+  
+  .order-pricing {
+    margin-bottom: 10px;
+  }
+  
+  .order-pricing p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .total {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .savings {
+    font-size: 14px;
+    color: #28a745;
+    text-align: right;
+  }
+  
+  /* Nút đặt hàng */
+  .order-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .order-btn:hover {
+    background-color: #b02a37;
+  }
+  
