@@ -1,98 +1,96 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Bán Hàng</title>
-    <link rel="stylesheet" href="product.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/styles/product.css" />
+  </head>
+  <body>
     <div class="header">
-        <input type="text" class="search-bar" placeholder="Tìm kiếm">
-        <button class="cart-button">
-            <i class="cart-icon">🛒</i>
-        </button>
+      <input type="text" class="search-bar" placeholder="Tìm kiếm" />
+      <button class="cart-button">
+        <i class="cart-icon">🛒</i>
+      </button>
     </div>
-    
+
     <div class="product-list">
-        <div class="product-item">
-            <img
-            class="band__members-item-img"
-            src="./assets/images/sp1.jpg"
-            alt="name"
-          />
-            <div class="product-info">
-                <p class="product-name">NÓN LƯỠI TRAI LEVI</p>
-                <p class="product-price">Giá: 50$</p>
-            </div>
+      <div class="product-item">
+        <img
+          class="band__members-item-img"
+          src="./assets/images/sp1.jpg"
+          alt="name"
+        />
+        <div class="product-info">
+          <p class="product-name">NÓN LƯỠI TRAI LEVI</p>
+          <p class="product-price">Giá: 50$</p>
         </div>
-        <div class="product-item">
-            <img
-                  class="band__members-item-img"
-                  src="./assets/images/sp2.jpg"
-                  alt="name"
-                />
-            <div class="product-info">
-                <p class="product-name">THUN SÀNH ĐIỆU</p>
-                <p class="product-price">Giá:100$</p>
-            </div>
+      </div>
+      <div class="product-item">
+        <img
+          class="band__members-item-img"
+          src="./assets/images/sp2.jpg"
+          alt="name"
+        />
+        <div class="product-info">
+          <p class="product-name">THUN SÀNH ĐIỆU</p>
+          <p class="product-price">Giá:100$</p>
         </div>
-        <div class="product-item">
-            <img
-                  class="band__members-item-img"
-                  src="./assets/images/sp3.jpg"
-                  alt="name"
-                />
-            <div class="product-info">
-                <p class="product-name">HODII</p>
-                <p class="product-price">Giá: 400$</p>
-            </div>
+      </div>
+      <div class="product-item">
+        <img
+          class="band__members-item-img"
+          src="./assets/images/sp3.jpg"
+          alt="name"
+        />
+        <div class="product-info">
+          <p class="product-name">HODII</p>
+          <p class="product-price">Giá: 400$</p>
         </div>
-        <div class="product-item">
-            <img
-                  class="band__members-item-img"
-                  src="./assets/images/sp4.jpg"
-                  alt="name"
-                />
-            <div class="product-info">
-                <p class="product-name">NÓN VÀNH</p>
-                <p class="product-price">Giá: 30$</p>
-            </div>
+      </div>
+      <div class="product-item">
+        <img
+          class="band__members-item-img"
+          src="./assets/images/sp4.jpg"
+          alt="name"
+        />
+        <div class="product-info">
+          <p class="product-name">NÓN VÀNH</p>
+          <p class="product-price">Giá: 30$</p>
         </div>
-        <div class="product-item">
-            <img
-                  class="band__members-item-img"
-                  src="./assets/images/sp6.jpg"
-                  alt="name"
-                />
-            <div class="product-info">
-                <p class="product-name">VÒNG CỔ BẠC</p>
-                <p class="product-price">Giá:200$</p>
-            </div>
+      </div>
+      <div class="product-item">
+        <img
+          class="band__members-item-img"
+          src="./assets/images/sp6.jpg"
+          alt="name"
+        />
+        <div class="product-info">
+          <p class="product-name">VÒNG CỔ BẠC</p>
+          <p class="product-price">Giá:200$</p>
         </div>
-        <div class="product-item">
-            <img
-            class="band__members-item-img"
-            src="./assets/images/sp7.jpg"
-            alt="name"
-          />
-            <div class="product-info">
-                <p class="product-name">KÍNH RÂM</p>
-                <p class="product-price">Giá: 20$</p>
-            </div>
+      </div>
+      <div class="product-item">
+        <img
+          class="band__members-item-img"
+          src="./assets/images/sp7.jpg"
+          alt="name"
+        />
+        <div class="product-info">
+          <p class="product-name">KÍNH RÂM</p>
+          <p class="product-price">Giá: 20$</p>
         </div>
+      </div>
     </div>
-    
-  
+
     <div id="payment-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closePaymentModal()">&times;</span>
-            <h2>Thông Tin Thanh Toán</h2>
-            <p id="modal-product-name"></p>
-            <p id="modal-product-price"></p>
-            <button class="btn-pay">Thanh Toán</button>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closePaymentModal()">&times;</span>
+        <h2>Thông Tin Thanh Toán</h2>
+        <p id="modal-product-name"></p>
+        <p id="modal-product-price"></p>
+        <button class="btn-pay">Thanh Toán</button>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
