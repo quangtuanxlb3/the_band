@@ -135,7 +135,6 @@ html {
   background-color: #f44336;
 }
 
-
 /* End: Header */
 
 /* Start: Home */
@@ -324,6 +323,7 @@ html {
 .tour__tikets-item {
   background-color: #ffffff;
   width: 100%;
+  position: relative;
 }
 
 .tour__tickets-item-quantity {
@@ -476,3 +476,38 @@ html {
   color: #666;
 }
 /* End :  Footer */
+
+.cart-button {
+  padding: 4px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  margin-right: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-button:hover {
+  background-color: #d9534f;
+}
+
+.cart-number {
+  position: absolute;
+  top: -8px;
+  right: -16px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.ticket-quantity {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-size: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

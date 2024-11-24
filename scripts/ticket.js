@@ -1,4 +1,5 @@
-const PRODUCTS = [
+const PRODUCTS_LOCALSTORAGE_KEY = "w3s-products";
+let PRODUCTS = JSON.parse(localStorage.getItem(PRODUCTS_LOCALSTORAGE_KEY)) || [
   {
     id: 1,
     image: "./assets/images/image.3.jpg",
@@ -33,13 +34,17 @@ function renderProducts() {
     const productItemEl = `
             <div class="tour__tickets-item-container">
                 <div class="tour__tikets-item">
+                    <span id="ticket-quantity-${product.id}" class="ticket-quantity">${product.quantity}</span>
                     <img src="${product.image}" alt="" />
                     <div style="padding: 12px;">
                       <h4 class="tour__tikets-item-title">${product.title}</h4>
                       <p class="tour__tikets-item-time">${product.time}</p>
                       <p class="tour__tikets-item-description">${product.description}</p>
-                      <button class="tour__tikets-item-btn">Buy Tickets</button>
-                      <input class="tour__tickets-item-quantity" type="number" />
+                      <form action="#" class="ticket-form">
+                        <button type="submit" class="tour__tikets-item-btn">Buy Tickets</button>
+                        <input name="ticket-quantity" class="tour__tickets-item-quantity" type="number" />
+                        <input name="ticket-product-id" style="display: none;" type="text" value="${product.id}">
+                      </form>
                     </div>
                 </div>
             </div>
@@ -49,3 +54,7 @@ function renderProducts() {
 }
 
 renderProducts();
+
+function saveProductsToLocalStorage() {
+  localStorage.setItem(PRODUCTS_LOCALSTORAGE_KEY, JSON.stringify(PRODUCTS));
+}
